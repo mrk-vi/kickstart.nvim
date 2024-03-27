@@ -552,6 +552,13 @@ require('lazy').setup({
         tsserver = {},
         --
 
+        -- My server declarations
+        -- I am going to install java lsp with nvim-jdtls
+        -- jdtls = {},
+        -- 
+        -- Scripting with groovy
+        groovyls = {},
+
         lua_ls = {
           -- cmd = {...},
           -- filetypes { ...},
