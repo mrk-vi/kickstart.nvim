@@ -12,7 +12,7 @@ local config = {
   -- See: https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
   cmd = {
 
-    'java',
+    '/Users/mirko/.sdkman/candidates/java/17.0.5-amzn/bin/java',
 
     '-Declipse.application=org.eclipse.jdt.ls.core.id1',
     '-Dosgi.bundles.defaultStartLevel=4',
@@ -53,13 +53,9 @@ local config = {
     java = {
       configuration = {
         runtimes = {
-          -- {
-          --   name = 'Java 17',
-          --   path = '/Users/mirko/.sdkman/candidates/java/17.0.5-amzn',
-          -- },
           {
-            name = 'Java 21',
-            path = '/Users/mirko/.sdkman/candidates/java/21-oracle',
+            name = 'JavaSE-17',
+            path = '/Users/mirko/.sdkman/candidates/java/17.0.5-amzn',
           },
         },
       },
@@ -68,7 +64,8 @@ local config = {
       },
       jdt = {
         ls = {
-          lombokSupport = true,
+          lombokSupport = { enabled = true },
+          protobufSupport = { enabled = true },
         },
       },
       maven = {
